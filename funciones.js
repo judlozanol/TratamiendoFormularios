@@ -24,3 +24,26 @@ function escribir(){
     document.getElementById("color").textContent=paresVarValor["color"];
     document.getElementById("alimento").textContent=paresVarValor["alimento"];
 }
+
+function validarCampos(){
+    if(document.getElementById("nombre").value==""){
+        alert("El nombre no puede ser vacio.");
+        document.getElementById("formMascota").action="uno.html";
+        return;
+    }
+    if(document.getElementById("tipo").value==""){
+        alert("El tipo de animal no puede ser vacio");
+        document.getElementById("formMascota").action="uno.html";
+        return;
+    }
+    if(document.getElementById("color").value==""){
+        alert("Ingrese el color de su mascota.");
+        document.getElementById("formMascota").action="uno.html";
+        return;
+    }
+    if(document.getElementById("alimento").value==""){
+        alert("Ingrese el alimento de su mascota");
+        document.getElementById("formMascota").action="uno.html";
+        return;
+    } alert("Formulario Enviado");
+}

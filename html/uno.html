@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Hola mundo :-O</title>
-		<link type="text/CSS" rel="stylesheet" href="..\estilos\estilos1.css">
+		<link type="text/CSS" rel="stylesheet" href="..\estilos\estilos2.css">
+		<script language="JavaScript" src="..\funciones.js"></script>
 	</head>
 	<body>
 		<h1>Hola mundo.</h1>
@@ -26,31 +27,32 @@
 						</tr>
 						<tr>
 							<td scope="row"> Nombre </td>
-							<td><input type="text" name="nombre"> </input></td>
+							<td><input type="text" name="nombre" id="nombre"> </input></td>
 						</tr>
 						<tr>
 							<td scope="row"> Tipo de Animal </td>
-							<td><input type="text" name="tipo"></input></td>
+							<td><input type="text" name="tipo" id="tipo"></input></td>
 						</tr>
 						<tr>
 							<td scope="row"> Color </td>
-							<td><input type="text" name="color"> </input></td>
+							<td><input type="text" name="color" id="color"> </input></td>
 						</tr>
 						<tr>
 							<td scope="row"> Alimento </td>
-							<td><input type="text" name="alimento"> </input></td>
+							<td><input type="text" name="alimento" id="alimento"> </input></td>
 						</tr>
 					</tbody>
 					<tfoot>
 						<tr>
 							<td colspan="4">
-								<input type=submit value="Enviar Datos" name="enviarDatos">
+								<input type=submit value="Enviar Datos" name="enviarDatos" onclick="validarCampos()">
 							</td>
 						</tr>
 					</tfoot>
 				</table>
 			</form>
 		</center>
+		<h3>Puedes visitar esta pagina completamente diseñada desde html dando <a href="dos.html">click aqui.</a></h3>
 		
 		<h2>HTML</h2>
 		<ol>	
