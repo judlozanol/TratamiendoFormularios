@@ -3,91 +3,51 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Hola mundo :-O</title>
+		<link type="text/CSS" rel="stylesheet" href="..\estilos\estilos1.css">
 	</head>
 	<body>
 		<h1>Hola mundo.</h1>
-		<h3><a href="https://github.com/judlozanol/PrimeraPaginaWeb/tree/main/Primero"><img src="..\img\git.png" width="50" height="50" ></a>Puedes consultar el código de esta sección en <a href="https://github.com/judlozanol/PrimeraPaginaWeb/tree/main/Primero">GitHub</a>.</h3>
+		<h3><a href="https://github.com/judlozanol/TratamiendoFormularios/blob/main/html/uno.html"><img src="..\img\git.png" width="50" height="50" ></a>Puedes consultar el código de esta sección en <a href="https://github.com/judlozanol/TratamiendoFormularios/blob/main/html/uno.html">GitHub</a>.</h3>
 		<center>
-			<form id="FormPedido" method="get" action="">
-				<table border="10">
-					<tr>
-						<td colspan="4">
-							<center><h3> Arma tu arroz</h3></center>
-						</td>
-					</tr>
-					<tr>
-						<td rowspan="5">
-							<center><a href="https://www.youtube.com/watch?v=wUgV5DF3pUU"><img src="..\arroz.jpg" width="250" height="250" align="center"></a></center>
-						</td>
-						<td>
-							<center><h4> Nombre </h4></center>
-						</td>
-						<td>
-							<center><h4> Precio </h4></center>
-						</td>
-						<td>
-							
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<h4> Cerdo </h4>
-						</td>
-						<td>
-							<h4> $3.500 </h4>
-						</td>
-						<td>
-							<input type=checkbox> 
-							</input>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<h4> Res </h4>
-						</td>
-						<td>
-							<h4> $3.500 </h4>
-						</td>
-						<td>
-							<input type=checkbox> 
-				
-							</input>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<h4> Pollo </h4>
-						</td>
-						<td>
-							<h4> $3.500 </h4>
-						</td>
-						<td>
-							<input type=checkbox> 
-				
-							</input>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<h4> Piña </h4>
-						</td>
-						<td>
-							<h4> $2.000 </h4>
-						</td>
-						<td>
-							<input type=checkbox> 
-				
-							</input>
-						</td>
-					</tr>
-					<tr>
-						<td colspan="4">
-
-							<center><input type=submit value="Finalizar Pedido" name="finalizarPedido"></center>
-							<center><h5> Cada porción de arroz incluye calabacin, cebolla, zanahoria y pimentón.</h5></center>
-							
-						</td>
-					</tr>
+			<form id="formMascota" method="get" action="tres.html">
+				<table class="tablaMascota">
+					<thead>
+						<tr>
+							<td colspan="3"> Crea a tu mascota </td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th rowspan="5">
+								<a href="https://www.youtube.com/watch?v=wUgV5DF3pUU"><img src="..\img\perros.png" width="250" height="250" align="center"></a>
+							</th>
+							<th> Característica </th>
+							<th> Input </th>
+						</tr>
+						<tr>
+							<td scope="row"> Nombre </td>
+							<td><input type="text" name="nombre"> </input></td>
+						</tr>
+						<tr>
+							<td scope="row"> Tipo de Animal </td>
+							<td><input type="text" name="tipo"></input></td>
+						</tr>
+						<tr>
+							<td scope="row"> Color </td>
+							<td><input type="text" name="color"> </input></td>
+						</tr>
+						<tr>
+							<td scope="row"> Alimento </td>
+							<td><input type="text" name="alimento"> </input></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="4">
+								<input type=submit value="Enviar Datos" name="enviarDatos">
+							</td>
+						</tr>
+					</tfoot>
 				</table>
 			</form>
 		</center>
@@ -110,6 +70,5 @@
 		<p>
 			JavaScript (JS) es un lenguaje de programación que permite implementar funciones complejas en páginas web. Se ejecuta en el lado del cliente de la web, y se puede utilizar para estilizar/programar cómo se comportan las páginas web cuando ocurre un evento. Más información sobre este lenguaje puede ser <a href="https://developer.mozilla.org/es/docs/conflicting/Web/JavaScript">consultada aquí</a>.
 		</p>
-		<center><a href="..\Segundo\hola.html"><button>Evolucionar Página</button></a></center>		
 	</body>
 </html>
