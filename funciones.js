@@ -1,49 +1,25 @@
-function leerGET(){ 
-    //obtiene la cadena de variables y valores es decir url despues del ?
-    var cadGET = location.search.substr(1,location.search.length); 
-    //rompe la cadena para separar pares variable=valor
-    var arrGET = cadGET.split("&"); 
-    var asocGET = new Array(); 
-    var variable = ""; 
-    var valor = ""; 
-    //llena el arreglo asociativo
-    for(i=0;i<arrGET.length;i++){ 
-        var aux = arrGET[i].split("="); 
-        variable = aux[0];
-        valor = aux[1];
-        valor =valor.replace("+"," ")
-        asocGET[variable] = valor; 
-    } 
-    return asocGET; 
-}
+function agregarNacimiento(){
+    var fecha = document.createElement("input");
+    var lugar= document.createElement("input");
+    var textFecha= document.createElement("li");
+    var textLugar= document.createElement("li");
+    var form=document.getElementById("formHojaVida");
 
-function escribir(){
-    var paresVarValor = leerGET();
-    document.getElementById("nombre").textContent=paresVarValor["nombre"];
-    document.getElementById("tipo").textContent=paresVarValor["tipo"];
-    document.getElementById("color").textContent=paresVarValor["color"];
-    document.getElementById("alimento").textContent=paresVarValor["alimento"];
-}
+    textFecha.textContent="Fecha de Nacimiento:";
+    textLugar.textContent="Lugar de Nacimiento:";
+    fecha.type = "date";
+    fecha.name = "fechaNacimiento";
+    fecha.placeholder = "Ingrese su fecha de nacimiento";
+    lugar.type = "text"
+    lugar.name ="lugarNacimiento"
+    lugar.placeholder = "Ingrese su lugar de nacimiento";
 
-function validarCampos(){
-    if(document.getElementById("nombre").value==""){
-        alert("El nombre no puede ser vacio.");
-        document.getElementById("formMascota").action="uno.html";
-        return;
-    }
-    if(document.getElementById("tipo").value==""){
-        alert("El tipo de animal no puede ser vacio");
-        document.getElementById("formMascota").action="uno.html";
-        return;
-    }
-    if(document.getElementById("color").value==""){
-        alert("Ingrese el color de su mascota.");
-        document.getElementById("formMascota").action="uno.html";
-        return;
-    }
-    if(document.getElementById("alimento").value==""){
-        alert("Ingrese el alimento de su mascota");
-        document.getElementById("formMascota").action="uno.html";
-        return;
-    } alert("Formulario Enviado");
+    document.getElementById("elementosAdicionales").appendChild(textFecha);
+    document.getElementById("elementosAdicionales").appendChild(fecha);
+    document.getElementById("elementosAdicionales").appendChild(textLugar);
+    document.getElementById("elementosAdicionales").appendChild(lugar);
+
+    document.getElementById("agregarNacimiento").style.display ="none";
+
+    /* Falta agregar los elementos del div al formulario  */
 }
